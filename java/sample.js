@@ -44,3 +44,39 @@ while(i<l){
 array=[25,13]
 array.forEach(element => console.log(element));
 
+const arrray=[25,13,"AB",10.00,Date()]
+for(var ele in arrray){
+    console.log(arrray[ele])
+
+}
+
+console.log("after change:")
+arrray.push("bhavi")
+
+for (var ele in arrray){
+    console.log(arrray[ele])
+}
+arrray.pop()
+arrray.pop()
+arrray.pop()
+arrray.pop()
+arrray.pop()
+arrray.pop()
+console.log("after popping")
+console.log(arrray)
+arrray.push("hi")
+console.log(arrray)
+
+if(arrray.length>0){
+    console.log("elements are present")
+    for (var ele in arrray){
+        console.log(arrray[ele])
+    }
+
+}
+
+else{
+    console.log("no elements")
+}
+arrray.push("hi")
+console.log(arrray)
