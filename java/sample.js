@@ -64,8 +64,7 @@ arrray.pop()
 arrray.pop()
 console.log("after popping")
 console.log(arrray)
-arrray.push("hi")
-console.log(arrray)
+
 
 if(arrray.length>0){
     console.log("elements are present")
@@ -78,5 +77,32 @@ if(arrray.length>0){
 else{
     console.log("no elements")
 }
+
 arrray.push("hi")
 console.log(arrray)
+
+//object//
+b={
+    car:"BMW",
+    model:"AB",
+    airbags:3,
+    wheels:5,
+    color:"Black"
+}
+
+console.log(b.car)
+console.log(b.airbags)
+b.car="audi"
+b.sunroof={shape:"circle"}
+
+console.log(b.sunroof.shape)
+
+for(var ele in b){
+    console.log(ele +":"+b[ele])
+    if(typeof b[ele] === "object"){
+        for (var val in b[ele]){
+            console.log(val +":" +b[ele][val])
+        }
+    }
+}
+
