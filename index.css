@@ -1,7 +1,61 @@
+body{
+    min-height: 200vh;
+    width:50%;
+}
 img{
-    width:600px;
-    height:600px;
+    width:60px;
+    height:60px;
+    
 }
 fieldset{
     width: 50%;
+}
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns:auto;
+    background-color:aqua;
+    padding: 10px;
+  }
+  .grid-item {
+    background-color:hotpink;
+    border: 3px solid black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .container{
+    max-width: 800px;
+    min-height: 600px;
+    margin-inline: auto;
+    border: 2px solid black;
+    display: flex;
+    gap: 1rem;
+    
+    justify-content: center;
+    
+    align-items: center;
+    flex-direction:row-reverse;
+    flex-flow:row wrap;
+
+}
+
+.bpx{
+    /*min-width: 100px;*/
+    
+    height: 100px;
+    background-color: palevioletred;
+    color: beige;
+    font-size: 2rem;
+    padding: 0.5rem;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    border:3px solid black;
+    
+    align-items: center;
+    flex-basis: 100px;
+    flex-grow: 1;
 }
