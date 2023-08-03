@@ -1,3 +1,5 @@
+/* 
+
 var a=25;
 console.log("before "+" " +a)
 {
@@ -106,3 +108,8 @@ for(var ele in b){
     }
 }
 
+function blink(a,b){
+    return a+b
+}
+
+console.log(blink(8,9)) */
